@@ -33,10 +33,10 @@ module.exports = {
 
     // Enforce a maximum line length (max-len)
     // http://eslint.org/docs/rules/max-len
-    "max-len": {
+    "max-len": ["error", {
       "code": 100,
       "tabWidth": 2,
-    },
+    }],
 
     // Disable: Ensure imports point to a file/module that can be resolved.
     // Not sure why we are doing this.  Commenting out for now.
@@ -46,10 +46,10 @@ module.exports = {
     // Disable: Forbid the use of extraneous packages.
     // We need to be able to pull devDependencies like Jest's shallow and mount into our tests.
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
-    "import/no-extraneous-dependencies": {
+    "import/no-extraneous-dependencies": ["error", {
       "devDependencies": true,
       "optionalDependencies": true,
       "peerDependencies": true,
-    }
+    }]
   }
 };
