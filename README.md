@@ -29,3 +29,13 @@ Add `mrb3k-jest` to the extends section of your `.eslintrc` configuration file. 
     ]
 }
 ```
+I gennerally add the "root" option inside of \__test\__ folders. "root" tells eslint to stop casscading eslintrc files.  It isolates the test folder and only uses our config without inheriting from configurations in ancestor folders.
+
+```json
+{
+    "root": true,
+    "extends": [
+        "mrb3k-jest"
+    ]
+}
+```
