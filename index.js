@@ -55,6 +55,10 @@ module.exports = {
       "devDependencies": true,
       "optionalDependencies": true,
       "peerDependencies": true,
-    }]
+    }],
+
+    // Disable: This is impractical
+    "import/no-named-as-default": ["error", 0],
+    "import/no-named-as-default-member": ["error", 0]
   }
 };
