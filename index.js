@@ -58,7 +58,7 @@ module.exports = {
     }],
 
     // Disable: This is impractical
-    "import/no-named-as-default": ["error", 0],
-    "import/no-named-as-default-member": ["error", 0]
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0
   }
 };
