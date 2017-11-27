@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mrb3k-jest",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "An ESLint shareable config used repeatedly in our projects inside of jest __test__ folders. So, I decided to make it a shareable config.",
   "main": "index.js",
   "scripts": {
