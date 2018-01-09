@@ -10,7 +10,7 @@ module.exports = {
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true,
-      "experimentalObjectRestSpread": true
+      "experimentalObjectRestSpread": true,
     },
   },
   "plugins": [
@@ -40,7 +40,7 @@ module.exports = {
       "ignoreUrls": true,
       "ignoreStrings": true,
       "ignoreTemplateLiterals": true,
-      "ignoreRegExpLiterals": true
+      "ignoreRegExpLiterals": true,
     }],
 
     // Disable: Ensure imports point to a file/module that can be resolved.
@@ -52,7 +52,7 @@ module.exports = {
     // thus losing self-documenting variable names like import Thing from 'thing'
     // https://stackoverflow.com/questions/44437203/how-do-i-resolve-eslint-import-no-named-as-default
     "import/no-named-as-default": 0,
-    "import/no-named-as-default-member": 0
+    "import/no-named-as-default-member": 0,
 
     // Disable: Forbid the use of extraneous packages.
     // We need to be able to pull devDependencies like Jest's shallow and mount into our tests.
