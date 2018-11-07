@@ -1,14 +1,14 @@
 module.exports = {
-  extends: [
-    'eslint-config-airbnb',
-  ].map(require.resolve),
+  "extends": ["airbnb"],
   "env": {
     "browser": true,
     "jest": true,
     "node": true,
+    "es6": true,
   },
   "parserOptions": {
     "ecmaVersion": 8,
+    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
     },
