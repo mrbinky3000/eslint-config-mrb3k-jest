@@ -4,17 +4,18 @@ module.exports = {
   ].map(require.resolve),
   "env": {
     "browser": true,
-    "es6": true,
     "jest": true,
+    "node": true,
   },
   "parserOptions": {
+    "ecmaVersion": 8,
     "ecmaFeatures": {
       "jsx": true,
-      "experimentalObjectRestSpread": true,
     },
   },
   "plugins": [
-    "react"
+    "react",
+    "jest"
   ],
   "rules": {
     // Enable react plugin rules

@@ -13,8 +13,10 @@
   "author": "Matthew Toledo",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": ">=3.0.0",
-    "eslint-config-airbnb": ">=12.0.0"
+    "eslint": ">=0",
+    "eslint-config-airbnb": ">=0",
+    "eslint-plugin-react": ">=0",
+    "eslint-plugin-jest": ">=0"
   },
   "engines": {
     "node": ">=0.10.0"
