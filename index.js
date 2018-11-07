@@ -38,6 +38,11 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     "import/no-unresolved": 0,
 
+    // Disable max line length
+    // In tests, we want more flexibility
+    // https://eslint.org/docs/rules/max-len
+    "max-len": 0,
+
     // Disable: Anoying rule. Doesn't hurt anything. Enabling it causes us to rename imported components
     // thus losing self-documenting variable names like import Thing from 'thing'
     // https://stackoverflow.com/questions/44437203/how-do-i-resolve-eslint-import-no-named-as-default
