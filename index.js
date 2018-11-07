@@ -29,23 +29,12 @@ module.exports = {
 
     // Disable: Prevent usage of .bind() in JSX props for testing only.
     // This is bad for production code as it is inefficient by causing superflous garbage collection.
+    // But, it is fine for our tests.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     "react/jsx-no-bind": 0,
 
-    // Enforce a maximum line length (max-len)
-    // http://eslint.org/docs/rules/max-len
-    "max-len": ["error", {
-      "code": 100,
-      "tabWidth": 2,
-      "ignoreComments": true,
-      "ignoreUrls": true,
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true,
-      "ignoreRegExpLiterals": true,
-    }],
-
     // Disable: Ensure imports point to a file/module that can be resolved.
-    // Not sure why we are doing this.  Commenting out for now.
+    // In tests, we want more flexibility
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     "import/no-unresolved": 0,
 
